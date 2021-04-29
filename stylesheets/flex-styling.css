@@ -2,6 +2,8 @@
     -moz-box-sizing: border-box; 
     -webkit-box-sizing: border-box; 
     box-sizing: border-box;
+
+    font-family: Helvetica, Arial, sans-serif;
 }
 
 body {
@@ -20,7 +22,14 @@ nav {
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 
-    height: 200px;
+    /* New for activity 2 */
+    /* Move the unordered list horizontally to the center of the row */
+    -moz-box-align: center;
+    -webkit-box-align: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    /* Got rid of fixed height for activity 3 */
 
     margin: 10px;
     padding-top: 5px;
@@ -42,11 +51,41 @@ nav ul {
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
 
+    /* New for activity 3 */
+    width: 100%;
+
+    /* New for activity 3 */
+    margin: 0;
+    padding: 0;
+
+    /* New for activity 2 */
+    /* Moves the list items horizontally to the center of the unordered list */
+    -moz-box-align: center;
+    -webkit-box-align: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+
+    /* New for activity 2 */
+    /* Center the list items vertically inside the unordered list */
+    -moz-box-pack: center;
+    -webkit-box-pack: center;
+    -webkit-align-items: center;
+    align-items: center;
+
     list-style: none;
 }
 
 nav a {
     display: inline-block;
+
+    /* New for activity 3 */
+    -webkit-flex-grow: 1;
+    -webkit-flex-shrink: 0;
+    -webkit-flex-basis: 215px;
+    
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 215px;
 
     /* 
         This sets the top margin to 0 px, 
@@ -64,4 +103,9 @@ nav a {
 
     text-align: center;
     text-decoration: none;
+}
+
+/* New for activity 2 */
+nav ul li {
+    font-size: 24px;
 }
