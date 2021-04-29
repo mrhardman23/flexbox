@@ -1,0 +1,67 @@
+* {
+    -moz-box-sizing: border-box; 
+    -webkit-box-sizing: border-box; 
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+
+    background-color: whitesmoke;
+}
+
+nav {
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    height: 200px;
+
+    margin: 10px;
+    padding-top: 5px;
+
+    background-color: #07575B;
+}
+
+nav ul {
+    /* 
+        This needs flexbox so that the child elements inside the ul will
+        stretch to fill the container.
+    */
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+
+    -webkit-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+    list-style: none;
+}
+
+nav a {
+    display: inline-block;
+
+    /* 
+        This sets the top margin to 0 px, 
+        the left and right to 5px with the 
+        second value, and the bottom to 5px
+        with the third value.
+    */
+    margin: 0px 5px 5px;
+    
+    padding: 20px;
+    border: 3px solid #C4DFE6;
+
+    background-color: #66A5AD;
+    color: aliceblue;
+
+    text-align: center;
+    text-decoration: none;
+}
